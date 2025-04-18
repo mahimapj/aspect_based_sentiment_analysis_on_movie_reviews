@@ -8,11 +8,11 @@ This project implements a fast and optimized Aspect-Based Sentiment Analysis (AB
 🔹 4. Sentiment Scoring - Sigmoid activation converts raw logits from BERT into probabilities per aspect which in turn are interpreted as confidence scores for each sentiment prediction.
 
  # Features
-🔍 Multi-aspect sentiment detection (acting, dialogues, storyline, etc.)
-🧠 Built with advanced transformer-based NLP models (BERT)
-⚡ Fast training on a subset of IMDB data
-📊 Confidence-based visualization using Matplotlib
-🖥️ Gradio interface for real-time user interaction
+  - Multi-aspect sentiment detection (acting, dialogues, storyline, etc.)
+  - Built with advanced transformer-based NLP models (BERT)
+  - Fast training on a subset of IMDB data
+  - Confidence-based visualization using Matplotlib
+  - Gradio interface for real-time user interaction
 
 # Installation
 <pre> ##  ```bash pip install transformers[torch] gradio pandas matplotlib --quiet ``` </pre>
@@ -37,18 +37,23 @@ The interface will launch a Gradio app:
 
 ```python
 iface.launch()
+```
 
-## 📦 Project Structure
+# Project Structure
 
 ```bash
 ├── absa_fast.py           # Main Python script
 ├── IMDB Dataset.csv       # Dataset sample
 ├── temp_plot.png          # Visualization output
 ├── README.md              # Project documentation
+```
 
 - Accepts a free-text review from the user
 - Returns aspect sentiment breakdown
 - Displays a bar graph for visual feedback
+  
+# Language
+Python
 
 # License
 MIT License
